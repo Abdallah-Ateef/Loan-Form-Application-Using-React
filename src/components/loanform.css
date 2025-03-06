@@ -1,0 +1,47 @@
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.loanform__form{
+    flex-direction: column;
+    background: rgb(51, 0, 170);
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    width: 50%;
+}
+
+label{
+    margin-top: 10px;
+}
+
+input,select{
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.loanform__bttn{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    background: rgb(211, 0, 127);
+    cursor: pointer;
+}
+
+.loanform__checkbox{
+    margin-top: 20px;
+}
+
+hr{
+    width: 100%;
+}

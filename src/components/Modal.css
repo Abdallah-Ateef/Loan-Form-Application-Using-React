@@ -1,0 +1,18 @@
+
+.modal{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.modal__content{
+    background-color: #fff;
+    width: 60%;
+    color: green;
+}
