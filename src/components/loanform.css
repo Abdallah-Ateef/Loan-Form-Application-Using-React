@@ -38,6 +38,10 @@ input,select{
     cursor: pointer;
 }
 
+#disable{
+    background-color: gray !important;
+}
+
 .loanform__checkbox{
     margin-top: 20px;
 }
