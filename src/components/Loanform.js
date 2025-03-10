@@ -3,17 +3,23 @@ import '../components/loanform.css'
 import Modal from "./Modal"
 
 export default function Loanform(){
+    const[showmodel,setshowmodel]=useState(false)
     const[loaninput,setloaninputs]=useState({name:'',phonenum:'',age:'',isemployee:false,salary:''})
     function handleformsubmit(event){
         event.preventDefault();
-        alert('the form has been submited successfuly');
+        setshowmodel(true);
+    }
+    function handleshowmodel(){
+        if(showmodel){
+            setshowmodel(false)
+        }
     }
    
     let bttndisable=loaninput.name==''||loaninput.age==''||loaninput.phonenum=='';
 
     return(
-        <div className="loanform flex">
-            <form className="loanform__form flex">
+        <div className="loanform flex" onClick={handleshowmodel}>
+            <form className="loanform__form flex" >
             <h1>Requesting To Loan</h1>
             <hr></hr>
             <label>Name:</label>
@@ -31,7 +37,7 @@ export default function Loanform(){
             </select>
             <button type="submit" className="loanform__bttn" id={bttndisable?'disable':''} disabled={bttndisable} onClick={handleformsubmit}>Submit</button>
             </form>
-            {/* <Modal></Modal> */}
+            <Modal isvisible={showmodel} ></Modal>
             
 
         </div>
